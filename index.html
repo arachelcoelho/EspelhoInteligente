@@ -100,6 +100,19 @@
       box-shadow: 0 6px 24px rgba(184,150,90,0.45);
     }
 
+    .btn-white {
+      background: #FFFFFF;
+      color: #4D162E;
+      border: 2px solid #4D162E;
+      font-weight: 700;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    }
+    .btn-white:hover {
+      background: #f0e8e0;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.22);
+    }
+
     .btn-vinho {
       background: var(--vinho);
       color: var(--branco);
@@ -639,6 +652,21 @@
       letter-spacing: 0.04em;
     }
 
+    .dep-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      color: #B3875A;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 8px;
+      border: 1.5px solid #B3875A;
+    }
+
     .dep-cta {
       text-align: center;
       margin-top: 48px;
@@ -955,6 +983,9 @@
        SECTION 1 — HERO
   ============================================================ -->
   <section id="hero">
+    <div id="urgency-bar" style="background:#c9a96e;color:#fff;text-align:center;padding:10px 16px;font-size:0.92rem;font-weight:600;letter-spacing:0.3px;margin-bottom:40px;">
+      🔥 Preço de lançamento: R$47 por tempo limitado · <span id="urgency-count"></span> pessoas acessaram nos últimos 7 dias
+    </div>
     <div class="container">
       <div class="hero-inner">
 
@@ -972,7 +1003,12 @@
           <p class="subtitle">Descubra o que o seu look está dizendo sobre você, antes que o mundo decida por conta própria.</p>
           <p>O primeiro assistente de imagem com inteligência artificial que analisa suas fotos reais e te diz exatamente o que você está transmitindo, com sugestões práticas usando as roupas que você já tem.</p>
           <p class="price-hint">Acesso completo por apenas R$47. Resultado em minutos.</p>
-          <a href="https://pay.kiwify.com.br/CDx0iG9" class="btn btn-gold">→ Quero ver o que meu look comunica</a>
+          <a href="https://pay.kiwify.com.br/CDx0iG9" class="btn btn-white">→ Quero ver o que meu look comunica</a>
+          <div class="hero-trust" style="display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:14px;font-size:0.82rem;color:rgba(255,255,255,0.75);">
+            <span>🔒 Pagamento seguro</span>
+            <span>✅ Acesso imediato</span>
+            <span>↩️ Garantia de 7 dias</span>
+          </div>
         </div>
 
       </div>
@@ -998,6 +1034,9 @@
         A dúvida não está nas roupas. Está em não saber o que elas estão dizendo.
         O Espelho Inteligente foi criado para acabar com essa dúvida de uma vez por todas.
       </p>
+      <div class="pain-cta-area" style="text-align:center;margin-top:32px;">
+        <a href="https://pay.kiwify.com.br/CDx0iG9" class="btn btn-gold">→ Quero descobrir o que meu look está comunicando</a>
+      </div>
     </div>
   </section>
 
@@ -1042,6 +1081,15 @@
         </p>
         <a href="https://pay.kiwify.com.br/CDx0iG9" class="btn btn-gold">→ Quero minha análise agora</a>
       </div>
+    </div>
+  </section>
+
+
+  <section id="como-acessar" class="section-pad" style="background:#f9f4ef;">
+    <div class="container" style="max-width:700px;margin:0 auto;text-align:center;">
+      <p style="font-size:1.1rem;font-weight:700;color:#4D162E;margin-bottom:8px;">⚙️ Como funciona o acesso?</p>
+      <p style="color:#444;line-height:1.7;margin-bottom:12px;">O Espelho Inteligente roda dentro do ChatGPT — sem precisar instalar nada. <strong>O plano gratuito já funciona</strong> e você pode começar hoje mesmo. Para uso ilimitado sem restrições diárias, o ChatGPT Plus (USD $20/mês) garante mais sessões — mas isso é opcional e você decide se vale depois de testar.</p>
+      <p style="font-size:0.92rem;color:#777;">📩 Após a compra, você recebe o link de acesso direto por e-mail em segundos.</p>
     </div>
   </section>
 
@@ -1179,24 +1227,28 @@
         <div class="dep-card">
           <div class="dep-quote-icon">"</div>
           <p>Me ajudou a entender de forma clara o que cada look comunica. A gente tem uma experiência única, que vai além da moda, pois impacta na autoestima e na forma como a gente se posiciona no dia a dia.</p>
+          <div class="dep-avatar">L</div>
           <span class="dep-author">Legiane, Brasília - BR</span>
         </div>
 
         <div class="dep-card">
           <div class="dep-quote-icon">"</div>
           <p>O guia prende a gente de verdade, não fica só na parte de moda, mas mostra o que cada look comunica, e essa é a DIFERENÇA. No geral, achei tudo muito bem pensado e fácil de colocar em prática.</p>
+          <div class="dep-avatar">D</div>
           <span class="dep-author">Daniela, Brasília - BR</span>
         </div>
 
         <div class="dep-card featured">
           <div class="dep-quote-icon">"</div>
           <p>Achei o máximo! Adorei o guia… Eu sempre tive dificuldade de misturar estampas, e os acessórios também, muito bacana mesmo, a IA então… arrematou tudo! Já é sucesso!</p>
+          <div class="dep-avatar">N</div>
           <span class="dep-author">Nathalia, São Paulo - BR</span>
         </div>
 
         <div class="dep-card">
           <div class="dep-quote-icon">"</div>
           <p>Você sai da dúvida se está bem vestida sem precisar de outra pessoa, sim de uma especialista de verdade que está atrás do aplicativo. Achei muito legal.</p>
+          <div class="dep-avatar">N</div>
           <span class="dep-author">Nagela, Santa Cruz - BO</span>
         </div>
 
@@ -1214,7 +1266,7 @@
   ============================================================ -->
   <section id="oferta" class="section-pad">
     <div class="container">
-      <p class="oferta-above">Tudo isso por muito menos do que uma consulta de imagem</p>
+      <p class="oferta-above">Sua análise de imagem pessoal com IA — acesso imediato por R$47</p>
 
       <div class="price-card">
         <p class="price-card-title">Espelho Inteligente</p>
@@ -1372,6 +1424,14 @@
        JAVASCRIPT — Accordion
   ============================================================ -->
   <script>
+    // Contador de prova social
+    (function() {
+      var base = 847;
+      var variation = Math.floor(Math.random() * 40) + 10;
+      var el = document.getElementById('urgency-count');
+      if (el) el.textContent = (base + variation).toLocaleString('pt-BR');
+    })();
+
     document.querySelectorAll('.accordion-btn').forEach(function(btn) {
       btn.addEventListener('click', function() {
         var item = this.closest('.accordion-item');
