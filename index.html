@@ -161,7 +161,8 @@
     .img-rect {
       border-radius: 16px;
       width: 100%;
-      height: 320px;
+      height: auto;
+      display: block;
     }
 
 
@@ -421,7 +422,6 @@
 
     @media (max-width: 580px) {
       .before-after { flex-direction: column; }
-      .img-rect { height: 220px; }
     }
 
 
@@ -1054,11 +1054,11 @@
       <div class="before-after">
         <div class="ba-item">
           <span class="ba-label">Antes</span>
-          <img src="antes.png" alt="Rachel antes" class="img-rect" style="object-fit: cover;" />
+          <img src="antes.png" alt="Rachel antes" class="img-rect" />
         </div>
         <div class="ba-item">
           <span class="ba-label">Depois</span>
-          <img src="depois.png" alt="Rachel depois" class="img-rect" style="object-fit: cover;" />
+          <img src="depois.png" alt="Rachel depois" class="img-rect" />
         </div>
       </div>
 
