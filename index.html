@@ -162,8 +162,6 @@
       border-radius: 16px;
       width: 100%;
       height: auto;
-      max-height: 480px;
-      object-fit: cover;
       display: block;
     }
 
@@ -393,10 +391,12 @@
       display: flex;
       gap: 24px;
       margin-bottom: 24px;
+      justify-content: center;
     }
 
     .ba-item {
-      flex: 1;
+      flex: 0 0 auto;
+      width: 280px;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -423,7 +423,8 @@
     .transf-cta { text-align: center; }
 
     @media (max-width: 580px) {
-      .before-after { flex-direction: column; }
+      .before-after { flex-direction: column; align-items: center; }
+      .ba-item { width: 100%; max-width: 320px; }
     }
 
 
