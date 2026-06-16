@@ -257,6 +257,7 @@
       color: var(--vinho);
       line-height: 1.5;
       box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      text-align: center;
     }
 
     .pain-close {
@@ -317,11 +318,12 @@
     }
 
     .step-number {
-      font-family: 'Trirong', serif;
-      font-size: 3.5rem;
+      font-family: 'Ballet', cursive;
+      font-size: 5rem;
       color: var(--dourado);
       line-height: 1;
       margin-bottom: 16px;
+      text-shadow: 0 2px 12px rgba(184,150,90,0.25);
     }
 
     .step h3 {
@@ -525,7 +527,7 @@
     .autoridade-name {
       font-family: 'Ballet', cursive;
       font-style: normal;
-      font-size: clamp(2rem, 4vw, 3rem);
+      font-size: clamp(3rem, 5.5vw, 4.5rem);
       color: var(--dourado);
       margin-bottom: 24px;
       line-height: 1.1;
@@ -598,33 +600,34 @@
     .dep-card {
       background: var(--vinho);
       border-radius: 16px;
-      padding: 30px 26px;
-      min-width: 270px;
-      max-width: 300px;
+      padding: 22px 20px;
+      min-width: 210px;
+      max-width: 230px;
       flex-shrink: 0;
       scroll-snap-align: start;
       color: var(--branco);
       position: relative;
     }
 
+    .dep-card p {
+      font-size: 0.82rem;
+      line-height: 1.55;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 14px;
+    }
+
+    .dep-quote-icon {
+      font-size: 1.8rem;
+      color: var(--dourado);
+      line-height: 1;
+      margin-bottom: 8px;
+      font-family: Georgia, serif;
+    }
+
     .dep-card.featured {
       border: 2.5px solid var(--dourado);
     }
 
-    .dep-quote-icon {
-      font-size: 2.5rem;
-      color: var(--dourado);
-      line-height: 1;
-      margin-bottom: 12px;
-      font-family: Georgia, serif;
-    }
-
-    .dep-card p {
-      font-size: 0.92rem;
-      line-height: 1.6;
-      color: rgba(255,255,255,0.9);
-      margin-bottom: 20px;
-    }
 
     .dep-author {
       font-weight: 700;
