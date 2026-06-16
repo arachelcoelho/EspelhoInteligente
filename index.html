@@ -24,7 +24,7 @@
     body {
       font-family: 'Poppins', sans-serif;
       color: #7A7A7A;
-      background: #F1E7DA;
+      background: #DFDCD6;
       line-height: 1.7;
     }
 
@@ -34,7 +34,7 @@
     :root {
       --vinho:        #4D162E;
       --vinho-dark:   #3a1022;
-      --bege:         #F1E7DA;
+      --bege:         #DFDCD6;
       --bege-card:    #DFDCD6;
       --dourado:      #B3875A;
       --dourado-light:#e8d0b0;
@@ -181,7 +181,9 @@
     }
 
     .hero-text h1 {
-      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-family: 'Ballet', cursive;
+      font-weight: 400;
+      font-size: clamp(2.8rem, 6vw, 4.4rem);
       color: var(--branco);
       margin-bottom: 16px;
     }
@@ -891,16 +893,21 @@
       <div class="hero-inner">
 
         <!-- Foto da especialista -->
-        <div class="img-placeholder img-oval">
-          FOTO RACHEL<br>HERO
-        </div>
+        <img
+          src="rachel.jpg"
+          alt="Rachel Coelho, consultora de imagem"
+          class="img-oval"
+          style="object-fit: cover; background: var(--dourado-light);"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+        <div class="img-placeholder img-oval" style="display:none;">FOTO RACHEL — HERO</div>
 
         <!-- Texto -->
         <div class="hero-text">
           <h1>Espelho Inteligente</h1>
-          <p class="subtitle">Descubra o que o seu look está dizendo sobre você — antes que o mundo decida por conta própria.</p>
-          <p>O primeiro assistente de imagem com inteligência artificial que analisa suas fotos reais e te diz exatamente o que você está transmitindo — com sugestões práticas usando as roupas que você já tem.</p>
-          <p class="price-hint">Acesso completo por apenas R$47 — resultado em minutos</p>
+          <p class="subtitle">Descubra o que o seu look está dizendo sobre você, antes que o mundo decida por conta própria.</p>
+          <p>O primeiro assistente de imagem com inteligência artificial que analisa suas fotos reais e te diz exatamente o que você está transmitindo, com sugestões práticas usando as roupas que você já tem.</p>
+          <p class="price-hint">Acesso completo por apenas R$47. Resultado em minutos.</p>
           <a href="#oferta" class="btn btn-gold">→ Quero ver o que meu look comunica</a>
         </div>
 
@@ -919,13 +926,13 @@
       <div class="pain-grid">
         <div class="pain-card">"Será que estou parecendo quem eu quero ser?"</div>
         <div class="pain-card">"Comprei peças novas, mas ainda sinto que algo não encaixa."</div>
-        <div class="pain-card">"Quero ser notada — mas do jeito certo, com elegância."</div>
+        <div class="pain-card">"Quero ser notada, do jeito certo, com elegância."</div>
         <div class="pain-card">"Meu estilo não está comunicando minha verdadeira essência."</div>
       </div>
 
       <p class="pain-close">
         A dúvida não está nas roupas. Está em não saber o que elas estão dizendo.
-        O Espelho Inteligente foi criado para acabar com essa dúvida — de uma vez por todas.
+        O Espelho Inteligente foi criado para acabar com essa dúvida de uma vez por todas.
       </p>
     </div>
   </section>
@@ -952,7 +959,7 @@
         <div class="step">
           <div class="step-number">②</div>
           <h3>O assistente analisa o que você está transmitindo</h3>
-          <p>Você recebe um feedback real: sua combinação está comunicando elegância, criatividade ou despojamento? O que está funcionando — e o que pode estar te traindo?</p>
+          <p>Você recebe um feedback real: sua combinação está comunicando elegância, criatividade ou despojamento? O que está funcionando e o que pode estar te traindo?</p>
         </div>
 
         <div class="steps-divider"></div>
@@ -960,14 +967,14 @@
         <div class="step">
           <div class="step-number">③</div>
           <h3>Se quiser, peça sugestões de melhoria</h3>
-          <p>O assistente sugere ajustes simples nos acessórios, no conjunto, nas cores — usando exatamente o que aparece na foto. Sem indicar compras. Sem consumo vazio.</p>
+          <p>O assistente sugere ajustes simples nos acessórios, no conjunto e nas cores, usando exatamente o que aparece na foto. Sem indicar compras, sem consumo vazio.</p>
         </div>
 
       </div>
 
       <div class="how-cta-area">
         <p class="how-reinforce">
-          É como ter uma consultora de imagem particular disponível 24h — sem sair de casa e sem gastar com roupas novas.
+          É como ter uma consultora de imagem particular disponível 24h, sem sair de casa e sem gastar com roupas novas.
         </p>
         <a href="#oferta" class="btn btn-gold">→ Quero minha análise agora</a>
       </div>
@@ -1013,14 +1020,14 @@
   <section id="bonus" class="section-pad">
     <div class="container">
       <h2>Além do Espelho Inteligente, você também recebe:</h2>
-      <p class="bonus-sub">6 bônus incluídos no seu acesso — sem custo adicional</p>
+      <p class="bonus-sub">6 bônus incluídos no seu acesso, sem custo adicional</p>
 
       <div class="bonus-grid">
 
         <div class="bonus-card">
           <span class="bonus-emoji">🎁</span>
           <h3>Assistente GPT: Qual é o seu estilo?</h3>
-          <p>Responda um questionário guiado e descubra em minutos qual é o seu estilo pessoal — clássico, romântico, contemporâneo, criativo?</p>
+          <p>Responda um questionário guiado e descubra em minutos qual é o seu estilo pessoal: clássico, romântico, contemporâneo ou criativo?</p>
         </div>
 
         <div class="bonus-card">
@@ -1076,11 +1083,11 @@
           <p class="autoridade-name">Rachel Coelho</p>
           <p>
             Advogada por formação, jornalista por destino e consultora de imagem por despertar.
-            Rachel descobriu no próprio espelho o poder de uma imagem com intenção — e desde então,
+            Rachel descobriu no próprio espelho o poder de uma imagem com intenção e, desde então,
             dedica seu trabalho a ajudar mulheres a se reconhecerem além da estética. Com formação em
             Programação Neurolinguística e Hipnoterapia, desenvolveu um método que une estilo, linguagem
             visual e reconstrução da autoimagem. Centenas de mulheres já passaram pela sua metodologia
-            e transformaram não apenas seus looks — mas a forma como se posicionam no mundo.
+            e transformaram não apenas seus looks, mas a forma como se posicionam no mundo.
           </p>
           <blockquote class="autoridade-quote">
             "Você não precisa de uma peça nova. Só de um novo olhar."
